@@ -16,7 +16,7 @@ I focus on systems that **don't lose or duplicate data**: idempotent workflows, 
 ### 🛠️ Tech stack
 | Area | Tools |
 |---|---|
-| Languages | Java 17, Python, TypeScript, Go (working knowledge) |
+| Languages | Java 17, Python, TypeScript, Go |
 | Backend | Spring Boot, Spring Security, FastAPI, Pydantic, Node/Express, REST, gRPC, OpenAPI |
 | Data | PostgreSQL, PostGIS, Oracle, MongoDB, Redis, Alembic |
 | Messaging | Apache Kafka, AWS SQS/SNS, RabbitMQ, Kinesis |
