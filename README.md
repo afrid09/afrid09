@@ -1,39 +1,36 @@
-# Hi, I'm Afrid 👋
+# Hey, I'm Afrid 👋
 
-**Backend Software Engineer · Distributed Systems & Reliability**
+I like building things, breaking them, figuring out why they broke, and occasionally discovering a much simpler way to solve a problem.
 
-I'm a software engineer with 5+ years of experience building backend systems, event-driven microservices, and cloud-native platforms, including at Apple and Accenture.
+I'm particularly fascinated by what happens behind the scenes in software.
 
-I focus on systems that **don't lose or duplicate data**: idempotent workflows, the transactional outbox pattern, safe retries and dead-letter queues, careful database concurrency, and end-to-end tracing.
+What happens when a service goes down halfway through a transaction? What if the same message arrives five times? How do systems recover without someone having to manually fix everything?
 
-### 🔧 What I work on
-- **Reliable data pipelines:** idempotent writes, transactional outbox, exactly-once-effect processing
-- **Event-driven systems:** Kafka, AWS SQS/SNS, retries, DLQs, failure classification
-- **Database correctness:** PostgreSQL row-level locking, savepoints, safe schema migrations
-- **Observability:** OpenTelemetry distributed tracing across APIs and async workers
-- **Cloud infrastructure:** AWS, Docker, Kubernetes, Terraform
+These are the kinds of problems I enjoy exploring.
 
-### 🛠️ Tech stack
-| Area | Tools |
-|---|---|
-| Languages | Java 17, Python, TypeScript, Go |
-| Backend | Spring Boot, Spring Security, FastAPI, Pydantic, Node/Express, REST, gRPC, OpenAPI |
-| Data | PostgreSQL, PostGIS, Oracle, MongoDB, Redis, Alembic |
-| Messaging | Apache Kafka, AWS SQS/SNS, RabbitMQ, Kinesis |
-| Cloud & DevOps | AWS (Lambda, Step Functions, EC2, S3, RDS), Docker, Kubernetes (EKS), Helm, Terraform, GitHub Actions |
-| Observability | OpenTelemetry, Prometheus, Grafana, CloudWatch |
+### Things I find interesting
 
-### 🚀 Featured projects
-**[reliable-orders](https://github.com/afrid09/reliable-orders)**: an order service that never loses or duplicates data, even when clients retry, processes crash and Kafka redelivers. Idempotency keys enforced by PostgreSQL, a transactional outbox to Kafka, exactly-once effects on top of at-least-once delivery, retries with a dead-letter topic, and one OpenTelemetry trace across the async gap. Every guarantee is proven by tests against real Postgres and Kafka. *Java 17 · Spring Boot · Kafka · Testcontainers*
+- Distributed systems and how they handle failure, consistency, and scale.
+- Event-driven architectures and asynchronous communication.
+- Database internals, transactions, and concurrency.
+- Workflow orchestration, especially [Cadence](https://github.com/cadence-workflow/cadence) and [Temporal](https://github.com/temporalio/temporal).
+- The engineering behind reliable infrastructure and production systems.
 
-**[FieldFlow](https://github.com/afrid09/FieldFlow)**: multi-service agriculture platform with separate read and write services, an API gateway with WebSocket fan-out, a background enrichment worker and PostGIS geo queries. Ships with OpenTelemetry tracing, Prometheus/Grafana/Loki/Tempo, Kubernetes and Helm manifests, backups with restore validation, and runbooks. *TypeScript · Node · Next.js · PostGIS*
+### Open source
 
-### 🌱 Currently
-- Getting into open source in the **workflow orchestration** space (Cadence, Temporal)
+I genuinely enjoy learning from open source and would love to contribute more to projects I find interesting.
 
-### 🎓 Credentials
-- M.S. Computer Science, Texas A&M University–Kingsville
-- AWS Certified Solutions Architect – Associate · Certified Kubernetes Administrator (CKA) · Oracle Certified Professional Java SE Developer
+I'm especially interested in the workflow orchestration ecosystem around Cadence and Temporal. I'd like to understand these projects beyond using their APIs, explore their internals, help improve documentation, investigate issues, and eventually contribute code.
 
-### 📫 Connect
-- LinkedIn: [linkedin.com/in/afrid-abdul-shaik](https://www.linkedin.com/in/afrid-abdul-shaik/)
+If you're building something interesting in this space, I'd love to be part of it.
+
+### Things I've built
+
+- [reliable-orders](https://github.com/afrid09/reliable-orders) - Exploring idempotency, transactional outbox, message delivery, retries, and failure recovery.
+- [FieldFlow](https://github.com/afrid09/FieldFlow) - Experimenting with service communication, real-time updates, geospatial data, and infrastructure.
+
+### Currently exploring
+
+Cadence, Temporal, distributed workflow orchestration, and the engineering challenges behind long-running processes.
+
+Always curious. Always learning. Always building.
