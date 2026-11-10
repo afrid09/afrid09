@@ -23,11 +23,12 @@ I focus on systems that **don't lose or duplicate data**: idempotent workflows, 
 | Cloud & DevOps | AWS (Lambda, Step Functions, EC2, S3, RDS), Docker, Kubernetes (EKS), Helm, Terraform, GitHub Actions |
 | Observability | OpenTelemetry, Prometheus, Grafana, CloudWatch |
 
-### 🚀 Featured project
-**[FieldFlow](https://github.com/afrid09/FieldFlow)**: multi-service agriculture platform with separate read and write services (CQRS), an API gateway with WebSocket fan-out, a background enrichment worker, and PostGIS geo queries. Ships with OpenTelemetry tracing, Prometheus/Grafana/Loki/Tempo, Kubernetes and Helm manifests, backups with restore validation, and runbooks.
+### 🚀 Featured projects
+**[reliable-orders](https://github.com/afrid09/reliable-orders)**: an order service that never loses or duplicates data, even when clients retry, processes crash and Kafka redelivers. Idempotency keys enforced by PostgreSQL, a transactional outbox to Kafka, exactly-once effects on top of at-least-once delivery, retries with a dead-letter topic, and one OpenTelemetry trace across the async gap. Every guarantee is proven by tests against real Postgres and Kafka. *Java 17 · Spring Boot · Kafka · Testcontainers*
+
+**[FieldFlow](https://github.com/afrid09/FieldFlow)**: multi-service agriculture platform with separate read and write services, an API gateway with WebSocket fan-out, a background enrichment worker and PostGIS geo queries. Ships with OpenTelemetry tracing, Prometheus/Grafana/Loki/Tempo, Kubernetes and Helm manifests, backups with restore validation, and runbooks. *TypeScript · Node · Next.js · PostGIS*
 
 ### 🌱 Currently
-- Building a reference **reliability service** in Java/Spring Boot: idempotency keys, transactional outbox → Kafka, retries with DLQ, and full tracing
 - Getting into open source in the **workflow orchestration** space (Cadence, Temporal)
 
 ### 🎓 Credentials
