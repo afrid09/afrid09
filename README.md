@@ -35,4 +35,4 @@ I focus on systems that **don't lose or duplicate data**: idempotent workflows, 
 - AWS Certified Solutions Architect – Associate · Certified Kubernetes Administrator (CKA) · Oracle Certified Professional Java SE Developer
 
 ### 📫 Connect
-- LinkedIn: _add link_
+- LinkedIn: [linkedin.com/in/afrid-abdul-shaik](https://www.linkedin.com/in/afrid-abdul-shaik/)
