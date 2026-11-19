@@ -42,12 +42,14 @@ jobs:
           GH_ASCII_URL: https://gh.crafter.run
           # Optional: ASCII resolution, 40-160 (default 100).
           # COLS: "120"
+          # Custom portrait instead of the GitHub avatar.
+          IMAGE: https://raw.githubusercontent.com/afrid09/afrid09/main/assets/profile.jpg
         run: |
           curl -fsSL --retry 3 --retry-delay 5 \
-            "$GH_ASCII_URL/$HANDLE?theme=dark${COLS:+&cols=$COLS}" \
+            "$GH_ASCII_URL/$HANDLE?theme=dark${COLS:+&cols=$COLS}&image=$IMAGE" \
             -o dark_mode.svg
           curl -fsSL --retry 3 --retry-delay 5 \
-            "$GH_ASCII_URL/$HANDLE?theme=light${COLS:+&cols=$COLS}" \
+            "$GH_ASCII_URL/$HANDLE?theme=light${COLS:+&cols=$COLS}&image=$IMAGE" \
             -o light_mode.svg
 
       - name: Commit only if the card changed
