@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="light_mode.svg" />
+  <img alt="afrid09's GitHub profile" src="dark_mode.svg" />
+</picture>
+
 # Hey, I'm Afrid 👋
 
 I like building things, breaking them, figuring out why they broke, and occasionally discovering a much simpler way to solve a problem.
