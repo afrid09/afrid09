@@ -1,4 +1,4 @@
-"""Generate dark_mode.svg and light_mode.svg: an ASCII portrait plus a neofetch-style card.
+"""Generate card-dark.svg and card-light.svg: an ASCII portrait plus a neofetch-style card.
 
 Usage:
     pip install pillow rembg onnxruntime opencv-python-headless numpy
@@ -140,5 +140,5 @@ def build(theme: str) -> str:
 
 if __name__ == "__main__":
     for theme in THEMES:
-        (ROOT / f"{theme}_mode.svg").write_text(build(theme), encoding="utf-8")
-        print(f"wrote {theme}_mode.svg")
+        (ROOT / f"card-{theme}.svg").write_text(build(theme), encoding="utf-8")
+        print(f"wrote card-{theme}.svg")
